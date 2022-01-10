@@ -1,0 +1,19 @@
+.features_cards {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: -5rem;
+}
+
+.features_img {
+  width: 55%;
+  margin-left: 20%;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.food_size {
+  width: 40%;
+  margin-left: 30%;
+}

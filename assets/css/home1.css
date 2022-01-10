@@ -1,0 +1,162 @@
+#mainnav {
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+}
+.logo-image {
+  width: 31px;
+  height: 31px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+#mainnav .nav-link {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+}
+.full-height {
+  height: 100%;
+}
+.topic {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #000000;
+}
+.paras {
+  font-family: Montserrat;
+  color: #000000;
+  font-weight: bold;
+}
+.para {
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.para9 {
+  color: #000000;
+}
+#sec1 {
+  background-color: black;
+}
+#get-pass {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#sec2 {
+  background: #e3d9fe;
+}
+#sec3 {
+  background: #daffc2;
+  padding: 20px;
+}
+#sec4 {
+  background: #fcd2e1;
+  padding: 20px;
+}
+#sec5 {
+  background: #f7ddc7;
+  padding: 20px;
+}
+#sec6 {
+  background: #f59fa0;
+  padding: 20px;
+}
+.sec7-head {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.sec7-para {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+#sec9 {
+  background: #e8fffc;
+  padding: 20px;
+}
+a:link {
+  text-decoration: none;
+}
+#sec8 {
+  background: black;
+}
+#reg-now {
+  margin-top: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#cards {
+  height: 331px;
+  width: 261px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+#text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-img-bottom {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+#formBody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sign-up-button {
+  width: 268px;
+  height: 37px;
+  background: #1ee626;
+  border-radius: 18.5px;
+  margin-bottom: 16px;
+}
+.form-control {
+  width: 268px;
+  height: 37px;
+  background: #fdf9f9;
+  border: 0.25px solid #ffe6e6;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+#formBody {
+  width: 323px;
+  height: 369px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  margin-bottom: 20px;
+}
+#terms {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}
+
+#club {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}

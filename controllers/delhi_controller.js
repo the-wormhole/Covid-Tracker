@@ -44,7 +44,7 @@ module.exports.delhiScraper = async function(req,res){
         
         console.log(scrapedData);
         await browser.close();
-        return res.redirect('/');
+        return res.redirect('/wip');
     }catch(err){
         console.log(err);
         return;

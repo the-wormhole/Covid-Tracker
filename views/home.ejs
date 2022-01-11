@@ -25,7 +25,7 @@
     <link rel = "icon" href = "" type = "image/x-icon">
 </head>
 
-<body onload="details()">
+<body>
 
     <nav id="mainnav" class="navbar navbar-fixed-top navbar-dark navbar-expand-md col-12 ">
         <a class="navbar-brand" href="/">
@@ -157,25 +157,25 @@
                             <p class="card-text" style="color: #6892ea;" id="text"> Total</p>
                         </div>
                         <hr class="solid">
-                        <div id="total" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Beds.Total %></div>
                         </div>
                 
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text">Rural Beds</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Occupied</p>
                         </div>
                         <hr class="solid">
-                        <div id="RuralBeds" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Beds.Occupied %></div>
                         </div>
                     
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text">Urban Beds</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Vacant</p>
                         </div>
                         <hr class="solid">
-                        <div id="UrbanBeds" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Beds.Vacant %></div>
                       </div>
                 </div>
 
@@ -183,49 +183,50 @@
                 <br>
 
    
-                <h3 class="text-center mx-auto d-block topic">COVID-19 Hospitals in Delhi</h3>
+                <h3 class="text-center mx-auto d-block topic">COVID-19 Oxygen Beds in Delhi</h3>
                 <div class="features_cards">
                     
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text">Total Hospitals Count</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Total</p>
                         </div>
                         <hr class="solid">
-                        <div id="TotalHospitalsCount" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Oxygen.Total%></div>
                         </div>
                 
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text">Rural Hospitals Count</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Occupied</p>
                         </div>
                         <hr class="solid">
-                        <div id="RuralHospitalsCount" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Oxygen.Occupied %></div>
                         </div>
                     
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text">Urban Hospitals</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Vacant</p>
                         </div>
                         <hr class="solid">
-                        <div id="UrbanHospitals" class="card-body">0</div>
+                        <div class="card-body"><%= BedList.Oxygen.Vacant %></div>
                       </div>
                 </div>
 
                 <br>
                 <br>
 
-                <h3 class="text-center mx-auto d-block topic">COVID-19 ICU Beds</h3>
+                <h3 class="text-center mx-auto d-block topic">COVID-19 ICU Beds in Delhi</h3>
                 <div class="features_cards">
                     
                         <div class="card mx-auto my-5  d-block " id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text"> Total</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Total</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.ICU.Total %></div>
                         </div>
                 
                         <div class="card mx-auto my-5  d-block " id="cards"
@@ -234,6 +235,7 @@
                             <p class="card-text" style="color: #6892ea;" id="text">Occupied</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.ICU.Occupied %></div>
                         </div>
                     
                         <div class="card  mx-auto my-5  d-block" id="cards"
@@ -242,21 +244,23 @@
                             <p class="card-text" style="color: #6892ea;" id="text">Vacant</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.ICU.Vacant %></div>
                       </div>
                 </div>
 
                 <br>
                
 
-                <h3 class="text-center mx-auto d-block topic">COVID-19 ICU Beds with Ventilators</h3>
+                <h3 class="text-center mx-auto d-block topic">COVID-19 ICU Beds with Ventilators in Delhi</h3>
                 <div class="features_cards">
                     
                         <div class="card mx-auto d-block my-5" id="cards"
                         style="background: linear-gradient(180deg, #DFEAFF 0%, #A8C4FE 100%); width: 11rem; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text" style="color: #6892ea;" id="text"> Total</p>
+                            <p class="card-text" style="color: #6892ea;" id="text">Total</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.Ventilator.Total %></div>
                         </div>
                 
                         <div class="card mx-auto d-block my-5" id="cards"
@@ -265,6 +269,7 @@
                             <p class="card-text" style="color: #6892ea;" id="text">Occupied</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.Ventilator.Occupied %></div>
                         </div>
                     
                         <div class="card mx-auto d-block my-5" id="cards"
@@ -273,6 +278,7 @@
                             <p class="card-text" style="color: #6892ea;" id="text"> Vacant</p>
                         </div>
                         <hr class="solid">
+                        <div class="card-body"><%= BedList.Ventilator.Vacant %></div>
                       </div>
                 </div>       
         
@@ -341,7 +347,7 @@
                             style="color: #DE6E6F; border: 1px solid #DE6E6F;"><%= orgs[i].Name %> <i
                                 class="fa fa-long-arrow-right"></i></button> </a>
                     <% } %>
-                    <a href="/wip"> <button id="reg-now" type="button"
+                    <a href="/organisations-list"> <button id="reg-now" type="button"
                         class="btn btn-outline-dark d-grid gap-2 col-6 btn-sm mx-auto d-block"
                         style="color: #f04e4e; border: 1px solid #DE6E6F;">See complete list <i
                             class="fa fa-long-arrow-right"></i></button> </a>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organisations</title>
+    <link rel="stylesheet" href="/css/organisation.css" />
+  </head>
+  <body>
+    <h1>Food Delivery Service</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Organisation Name</th>
+          <th>Organisation Address</th>
+          <th>Email Address</th>
+          <th>Mobile Number</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <% for(let org of orgs){ %>
+          <tr>
+            <td data-column="Organisation Name"><%= org.Name %></td>
+            <td data-column="Organisation Address"><%= org.Address %></td>
+            <td data-column="Email Address"><%= org.Email %></td>
+            <td data-column="Mobile Number"><a href="tel:<%= org.Contact %>" style=" color:black; text-decoration:none;"><%= org.Contact %></a></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
+

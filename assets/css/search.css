@@ -1,0 +1,31 @@
+#heading{
+    /* text-decoration: underline;  */
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    /* display: inline-block; */
+}
+#heading h1{
+    display: inline-block;
+}
+.widget{
+    background-color: black;
+    width: 50%;
+    padding:0 1px 10px 10px;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    height: auto;
+    overflow: hidden;
+}
+.res-head a{
+
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #8ab4f8;
+}
+
+.res-url{
+    color: green;
+    font-family: sans-serif;
+    text-decoration: none;
+}

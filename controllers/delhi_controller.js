@@ -16,7 +16,7 @@ module.exports.delhiScraper = async function(req,res){
         var hospitalsC = await page.$$eval('.table-danger', allAs => allAs.map(a => a.innerText)); 
         hospitalsC.shift();
         var finList = hospitalsA.concat(hospitalsB,hospitalsC);
-        console.log(finList,finList.length);
+        //console.log(finList,finList.length);
 
         const scrapedData = [];
         finList.forEach(hospital => {
@@ -30,7 +30,16 @@ module.exports.delhiScraper = async function(req,res){
             }
             let vacant = temp[4].slice(0,ind-5);
             //console.log(vacant,ind);
+            let Manage;
+            if(hospital.includes('Pvt')){
+                Manage = 'Pvt';
+            }else if(hospital.includes('Central')){
+                Manage = 'Central Govt';
+            }else{
+                Manage = 'Delhi Govt';
+            }
             var Hospdet = {
+                Management:Manage,
                 'Hospital/Covid Centre':temp[0],
                 'Last Updated':temp[1],
                 'Total Beds':temp[2],
@@ -42,9 +51,11 @@ module.exports.delhiScraper = async function(req,res){
             //console.log(Hospdet);
         });
         
-        console.log(scrapedData);
+        //console.log(scrapedData);
         await browser.close();
-        return res.redirect('/wip');
+        return res.render('hospitals',{
+            hospitalsStatus:scrapedData
+        });
     }catch(err){
         console.log(err);
         return;

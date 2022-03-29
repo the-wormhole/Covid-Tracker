@@ -35,7 +35,7 @@ module.exports.createOrg = async function(req,res){
 module.exports.orgList = async function(req,res){
 
     let allOrgs = await Org.find();
-    return res.render('wip',{
+    return res.render('organisations',{
         orgs:allOrgs
     });
 }
